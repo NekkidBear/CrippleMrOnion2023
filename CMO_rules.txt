@@ -66,12 +66,12 @@ worth are:
   2. two-card onion: this is a combination of two cards which totals exactly
      twenty-one; it is, therefore, either TA or PA.
   3. Broken Flush: this is a group of at least three cards, summing to at
-     least sixteen (but not more than twenty-one) with all of the cards
-     except for one in the same suit-pair.
+     least sixteen (but not more than twenty-one) with all the cards,
+     except for one, all in the same pair of suits.
   4. three-card onion: this is a group of three cards which totals
      twenty-one exactly; examples are ATT, 56T, and 579.
   5. Flush: this is a group of at least three cards, summing to at least
-     sixteen (but not more than twenty-one) with all of the cards in the
+     sixteen (but not more than twenty-one) with all the cards in the
      same suit-pair.
   6. four-card onion: ... four cards which total twenty-one; for example,
      A55T, 2469, and 3378.
@@ -85,7 +85,7 @@ worth are:
      wild eights.)
  12. seven-card onion: ... seven cards ... e.g. A223445.
  13. Onion: an Onion (capitalised letter 'o') is a two card combination of a
-     picture card and an ace; however, PA on its own is just a two- card
+     picture card and an ace; however, PA on its own is just a two-card
      onion (place two above), since to occupy this exalted position, the
      group must consist of two Onions, PAPA or Double Onion, or three
      Onions, PAPAPA or 3[PA] or Triple Onion, or four Onions, 4[PA] or
@@ -228,7 +228,7 @@ match it; this time, however, the players are not asked to raise.
 
 The second set of five cards for each remaining player is then dealt as
 follows: as before, the Dealer receives five cards face down, but now each
-player has the option of buying from one to all of the five cards face down,
+player has the option of buying from one to all five of the cards face down,
 at the price of an amount equal to the Stake per card, instead of receiving
 them all face up. Cards may be bought one at a time, if desired, and once
 the player has finished buying cards, the Dealer deals the remainder from
@@ -267,7 +267,7 @@ match the existing bid and advance another amount equal to the Stake. This
 process continues around and around the table, with each prospective Dealer
 making sure that the most recent player's bid is at least an amount equal to
 the Stake higher that the last bid, until all the players except for one
-have declined to advance any more, having placed their own total bid in the
+have declined to advance anymore, having placed their own total bid in the
 Pot as they declined, and the single player left becomes the new Dealer,
 placing the winning bid in the pot. If nobody wishes to be the new Dealer,
 all the players fold, the Pot becomes the ante for the next round, the old
@@ -355,7 +355,7 @@ Modifier #4: The Lady's Rules
   1. If eights are not wild, the queen of spades may be declared, before or
      during Showdown, and replaced by the player's choice of one of the next
      two cards from the deck, the chosen card taking up the place of the
-     queen; other card goes to the discard pot. This move may not rescinded.
+     queen; other card goes to the discard pot. This move may not be rescinded.
   2. When eights are wild, the queen of spades devalues one, for every other
      player, that would otherwise be played as having value eleven, to value
      one only. This does not affect any aces in a Great Onion, but may affect
@@ -371,7 +371,7 @@ Modifier #5: Fate's Rules
 
   1. If the queen of spades has been declared and replaced, the king of cups
      may also be declared and replaced in a like manner, in the process making
-     all aces held by the player who used the queen of spades have value zero.
+     all aces held by the player who used the queen of spades now have value zero.
   2. If eights are wild, the king of cups may be declared so that eights
      immediately cease to be wild; a different player who has the queen of
      spades, whether visible, played or not, may then make his own eights wild
