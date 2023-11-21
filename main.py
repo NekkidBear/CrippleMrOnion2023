@@ -1,6 +1,8 @@
 import pygame
 import random
 import CMO_Deck
+import game_loop
+
 
 
 # def load_sprites(deck):
