@@ -5,10 +5,11 @@ class Card:
     def __init__(self, rank, suit, sprite):
         self.rank = rank
         self.suit = suit
-        self.sprite = sprite
+        # self.sprite = sprite
 
     def __repr__(self):
         return f"{self.rank} of {self.suit}, sprite: {self.sprite}"
+
 
 class Deck:
     def __init__(self, ranks, suits, sprites):
@@ -30,5 +31,5 @@ class Deck:
     def __repr__(self):
         deck_comp = ''
         for card in self.deck:
-            deck_comp += '\n '+card.__repr__()
-        return 'The deck has '+str(len(self.deck))+' cards:'+ deck_comp
+            deck_comp += '\n ' + card.__repr__()
+        return 'The deck has ' + str(len(self.deck)) + ' cards:' + deck_comp

@@ -1,58 +1,60 @@
+from cards import *
+from hand import *
+from CMO_settings import *
+import ctypes
 import pygame
-import random
-import CMO_Deck
-import game_loop
-
-
-
-# def load_sprites(deck):
-#     # This function should load your card images (sprites) and assign them to the cards in the deck
-#     pass
-
-def shuffle_and_deal(deck, num_players):
-    # This function should shuffle the deck and deal the cards to the players
-    pass
+import sys
 
 def main():
     pygame.init()
 
-    # Set up some constants
-    WINDOW_WIDTH = 800
-    WINDOW_HEIGHT = 600
-    CARD_WIDTH = 50
-    CARD_HEIGHT = 100
 
-    # Create the window
-    window = pygame.display.set_mode((WINDOW_WIDTH, WINDOW_HEIGHT))
 
-    # Create the deck
-    ranks = ['Ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'Jack', 'Queen', 'King']
-    suits = ['Hearts', 'Clubs', 'Spades', 'Diamonds', 'Cups', 'Staves', 'Swords', 'Coins']
-    sprites = {...}  # Fill in with your sprites
-    deck = CMO_Deck.Deck(ranks, suits, sprites)
+    # Create the screen
+    screen = pygame.display.set_mode((WIDTH, HEIGHT))
 
-    # Load the sprites
-    # load_sprites(deck)
+    # Start the clock
+    clock = pygame.time.Clock()
 
-    # Game loop
-    running = True
-    while running:
+    while True:
+        # Limit the frame rate to FPS
+        clock.tick(FPS)
+
+        # Process input
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
-                running = False
+                save_data()
+                pygame.quit()
+                sys.exit()
+            elif event.type == pygame.KEYDOWN:
+                if event.key == pygame.K_ESCAPE:
+                    save_data()
+                    pygame.quit()
+                    sys.exit()
 
-        # Game logic goes here
+        # Update game state
+        update_game()
 
-        # Draw the window
-        window.fill((255, 255, 255))  # Fill the window with white
+        # Draw everything
+        draw(screen)
 
-        # Draw the cards
-        for card in deck.deck:
-            window.blit(card.sprite, (0, 0))  # This should actually position the cards correctly
+def save_data():
+    """
+    Save player data and game stats to the database.
+    """
+    pass
 
-        pygame.display.flip()
+def update_game():
+    """
+    Update the game state.
+    """
+    pass
 
-    pygame.quit()
+def draw(screen):
+    """
+    Draw everything to the screen.
+    """
+    pass
 
 if __name__ == "__main__":
     main()
