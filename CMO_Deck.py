@@ -1,16 +1,6 @@
 import random
 
 
-class Card:
-    def __init__(self, rank, suit, sprite):
-        self.rank = rank
-        self.suit = suit
-        # self.sprite = sprite
-
-    def __repr__(self):
-        return f"{self.rank} of {self.suit}, sprite: {self.sprite}"
-
-
 class Deck:
     def __init__(self, ranks, suits, sprites):
         self.ranks = ranks
