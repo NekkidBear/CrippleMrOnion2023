@@ -35,11 +35,11 @@ for i, suit in enumerate(suits):
 
 
 class Card:
-    def __init__(self, value, rank, suit, spritesheet, card_rect):
-        self.value = value
-        self.rank = rank
-        self.suit = suit
-        self.image = spritesheet.subsurface(card_rect)
+    def __init__(self, card_rank, card_suit, card_spritesheet, card_rect):
+        self.value = card_rank
+        self.rank = card_rank
+        self.suit = card_suit
+        self.image = card_spritesheet.subsurface(card_rect)
 
     def __repr__(self):
         return f"{self.rank} of {self.suit}, value: {self.value}"

@@ -1,12 +1,30 @@
 import random
-from cards import Card
+from cards import *
+import pygame
 
 
 class Deck:
-    def __init__(self, ranks, suits, sprites):
-        self.ranks = ranks
-        self.suits = suits
-        self.deck = [Card(rank, suit, sprites[suit][rank]) for suit in self.suits for rank in self.ranks]
+    def __init__(self, deck_ranks, deck_suits, deck_spritesheet):
+        self.ranks = deck_ranks
+        self.suits = deck_suits
+        self.spritesheet = deck_spritesheet
+        self.deck = self._create_deck()
+
+    def _create_deck(self):
+        deck = []
+        for suit in self.suits:
+            for rank in self.ranks:
+                # Calculate the position of the card in the spritesheet
+                x_pos = self.ranks.index(rank) * (CARD_WIDTH + 1)
+                y_pos = self.suits.index(suit) * (CARD_HEIGHT + 1)
+
+                # Create a Rect object for the card
+                card_rect = pygame.Rect(x_pos, y_pos, CARD_WIDTH, CARD_HEIGHT)
+
+                # Create a Card object and add it to the deck
+                card = Card(rank, suit, self.spritesheet, card_rect)
+                deck.append(card)
+        return deck
 
     def shuffle(self):
         random.shuffle(self.deck)
