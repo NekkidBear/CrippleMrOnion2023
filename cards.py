@@ -32,3 +32,24 @@ for i, suit in enumerate(suits):
         # Add the card to the dictionary
         card_name = f"{rank} of {suit}"
         cards[card_name] = card_image
+
+
+class Card:
+    def __init__(self, value, rank, suit, spritesheet, card_rect):
+        self.value = value
+        self.rank = rank
+        self.suit = suit
+        self.image = spritesheet.subsurface(card_rect)
+
+    def __repr__(self):
+        return f"{self.rank} of {self.suit}, value: {self.value}"
+
+    def draw(self, surface, position):
+        """
+        Draw the card on a surface.
+
+        Args:
+        surface: the pygame.Surface object to draw on.
+        position: a tuple specifying the position to draw the card at.
+        """
+        surface.blit(self.image, position)
