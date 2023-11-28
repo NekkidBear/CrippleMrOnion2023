@@ -1,5 +1,5 @@
 # CrippleMrOnion2023
-Python version of cripple mr onion
+This is the newest Python version of my 'Cripple Mr. Onion" project. I hope to implement a gui-based, multiplayer version of it.
 
 This is an implementation of Cripple Mr. Onion, as concieved by Sir Terry Pratchett and documented by Andrew Millard and Terry Tao.
 These rules are found at: https://discworld.fandom.com/wiki/Cripple_Mr_Onion_Full_Rules, and documented here for posterity.
@@ -8,7 +8,13 @@ As I do not own the rights to the concepts or the game, this is a fan work and n
 Dark Tarot card images are used by permission from darktarot.com
 Other art and card images are free downloads found on itch.io or generated via AI.
 
-This project uses items with multiple licenses, and is being published under the 
+This project uses items with multiple licenses, and is being published under the Creative Commons BY license. Only this python implementation is my IP. Please respect the owners copyrights and all licensing guidelines for the various imported and external content.
+
+Dark Tarot can be published at support@Darktarot.com
+
+I can be reached at NekkidBearGaming@gmail.com
+
+Jason King-Lowe
 
 
 Cripple Mr Onion
